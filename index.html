@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RoyalRide</title>
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- زرار الواتساب الثابت في زاوية الشاشة -->
+	<a href="https://wa.me/201208756644" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+		<i class="fa fa-whatsapp"></i>
+	</a>
+
+	<header>
+		<img src="headericon.png" alt="Royal Ride Logo">
+		<nav>
+			<a href="#" data-en="Home" data-ar="الرئيسية">Home</a>
+			<a href="#fleet" data-en="Our fleet" data-ar="الأسطول">Our fleet</a>
+			<a href="#booking" data-en="Services" data-ar="الخدمات">Services</a>
+			<a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+		</nav>
+		<!-- زرار تبديل اللغة -->
+		<button id="lang-switch" onclick="toggleLanguage()">AR</button>
+	</header>
+
+	<main>
+		<div class="main-content">
+			<h1 data-en="Your Royal Journey Begins Here — Luxury, Safety, and Comfort in Every Ride" data-ar="رحلتك الملكية تبدأ من هنا — فخامة، أمان، وراحة في كل مشوار">Your Royal Journey Begins Here — Luxury, Safety, and Comfort in Every Ride</h1>
+			<h4 data-en="Airport transfers, private trips, and intercity travel with the highest standards of quality and punctuality" data-ar="انتقالات المطارات، الرحلات الخاصة، والسفر بين المدن بأعلى معايير الجودة والالتزام بالمواعيد">Airport transfers, private trips, and intercity travel with the highest standards of quality and punctuality</h4>
+		</div>
+	</main>
+
+	<section class="fleet" id="fleet">
+		<h2 class="section-title" data-en="Our Fleet" data-ar="أسطول السيارات">Our Fleet</h2>
+		
+		<div class="category-group">
+			<h3 data-en="Luxury Collection" data-ar="السيارات الفاخرة">Luxury Collection</h3>
+			<div class="fleet-grid">
+				<div class="carcard">
+					<img src="https://images.unsplash.com/photo-1673166105764-a6aa7e0e73a7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="G-Class">
+					<h4>G-class</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/sKx0CyUJwazfNdX3RyIXCsZBYEhtHm1_yPddFd8wgL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y25ldC5jb20vd3At/Y29udGVudC91cGxv/YWRzL3NpdGVzLzIv/NjNhYjc3MzgtZjQ2/Ni00YzNkLWEwZGIt/NWU4NDcwMmZiMzUy/LmpwZz9maXQ9MTIw/MCw2NzU" alt="Mercedes-Benz S-Class S500">
+					<h4>Mercedes-Benz S-Class S500</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/uU0_b0GnXtH2E6rAoXSd0rMg2l0Rt9MdbLaOHnu1djc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvaW1t/YWN1bGF0ZS1tZXJj/ZWRlcy1iZW56LXYt/Y2xhc3MtaW4tbmln/aHQtdmlzdGEtMTBr/aXR0bmt4dmhxN3Fw/ay5qcGc">
+					<h4>Mercedes-Benz V-Class</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/7IwjAhiJh18LMHOk77oyYf60n9i33-4kGuxytaApMEI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5kcml2ZS5jb20u/YXUvb2JqL3R4X3E6/ODAscnM6YXV0bzo2/NDA6MzYwOjEvZHJp/dmVhdS91cGxvYWQv/dmVoaWNsZXMvdXNl/ZC9tZXJjZWRlcy1i/ZW56L2UtY2xhc3Mv/MjAyNS9lMmZhYWQ5/MS0zMmEyLTVmZDkt/OTA3Yi1jNWQwOTRi/NTAwMDA" alt="Mercedes-Benz E200">
+					<h4>Mercedes-Benz E200</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/xHi16YNapImRTd7HbdLVtfsryphIm-3NaMyW0xBkKeU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY2Fyc2d1aWRl/LmNvbS5hdS9pbWFn/ZS91cGxvYWQvY19m/aWxsLGdfYXV0byxo/XzE1MSx3XzI2OCxm/X2F1dG8sdF9jZ19i/YXNlL3YxL2VkaXRv/cmlhbC9yZXZpZXcv/aGVyb19pbWFnZS8y/MDIxLW1lcmNlZGVz/LWJlbnotZTMwMC1j/b3VwZS1ncmV5LTEw/MDF4NTY1LSgxKS5q/cGc" alt="Mercedes-Benz E300">
+					<h4>Mercedes-Benz E300</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/ogJHkgQHDdxMQGc3YdRFvDLmg4wiXZ2VhEPkXDyz0mw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9qbHIu/c2NlbmU3LmNvbS9p/cy9pbWFnZS9qbHIv/NjM3ODc4OTYwODc4/NzMzNjI3WkI" alt="Range Rover Sport">
+					<h4>Range Rover Sport</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/7mPhaMMUQWcL4S-hMSvQMfZC4iLnsjlEatenI6Yzd0A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL210Zy1wcm9k/LzY1ZmM1OWMxYWMy/ZDQ3MDAwODE2MGU2/Mi8wMDEtMjAyNC1y/YW5nZS1yb3Zlci12/ZWxhci1mcm9udC10/aHJlZS1xdWFydGVy/LXN0YXRpYy1sZWFk/LmpwZz93PTc2OCZ3/aWR0aD03NjgmcT03/NSZmb3JtYXQ9d2Vi/cA" alt="Range Rover Velar">
+					<h4>Range Rover Velar</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/2qpZvIOWwOViS6zqienQKTVhi_OyBgJ7_Qoco7L-quI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5kcml2ZS5jb20u/YXUvb2JqL3R4X3E6/NzAscnM6YXV0bzox/MjgwOjcyMDoxL2Ry/aXZlYXUvdXBsb2Fk/L2Ntcy91cGxvYWRz/L2M0ZTk3MjZjLTAz/MzAtNTAxOS1hYjEz/LTZhODVhYzQ1MDAw/MA" alt="Nissan Patrol">
+					<h4>Nissan Patrol</h4>
+				</div>
+			</div>
+		</div>
+		<div class="category-group">
+			<h3 data-en="SUV Collection" data-ar="فئة إس يو في">Suv</h3>
+			<div class="fleet-grid">
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/zqoGzCjtB585gio4Q_MDgRcqbXhK1Bb15ytcZxPsPWg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aGVhZGxpZ2h0bWFn/LmNvbS9obG13cC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8w/Mi9NaXRzdWJpc2hp/X1hwYW5kZXJfQ3Jv/c3NfSEVWX0V4dGVy/aW9yXzIuanBn" alt="" srcset="">
+					<h4>Mitsubishi Xpander</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/50sLNMQipAUddD_gS5QmURoIJXNeTm10LxrPXa6FGAc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/czMuYXV0b2Nhcmlu/ZGlhLmNvbS9sZWdh/Y3kvY2RuaS9FeHRy/YUltYWdlcy8yMDE2/MTEwNzAxMzg1OV9n/NS5qcGc_dz02NDAm/cT03NSZmbT1hdXRv" alt="" srcset="">
+					<h4>Toyota Fortuner</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/7_CQcTDeWQnfWNfdYv0HfItP7O0IoIXxoeeUuz7pmOY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWd5/LnByby9hbGFtZWxz/eWFyYXQvNzY4eDQz/My83MjAyNDI0MTE0/MjE0Mjk4MDI0MjM5/LmpwZw" alt="" srcset="">
+					<h4>Jetour x90</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/FrIiZJKlmz6bv56c96nAYbaUA_x_glu1MO-i3vTip60/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF0/Zm9ybS5jc3RhdGlj/LWltYWdlcy5jb20v/aW4vdjIvc3RvY2tf/cGhvdG9zLzM3OTJl/MDAwLWNmYjYtNGQw/Yi1hYTgwLWE5YTM3/YWUyYTk5ZC84ODIz/MzJmZC0xOWE4LTRm/MDUtODM0ZS0xMWQ4/NTM1MDg3MmEucG5n" alt="" srcset="">
+					<h4>Kia Carnival</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/X0RpxJqIppMrbqD_Swm4ouPVaxSPmPvmJg89efVUHwY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdj/ZG4ub3RvLmNvbS9s/YXJnZS9nYWxsZXJ5/L2V4dGVyaW9yLzE1/LzE5OTgvaHl1bmRh/aS1oMS1mcm9udC1z/aWRlLXZpZXctNTc5/MzgwLmpwZw" alt="" srcset="">
+					<h4>Hyundai H1 </h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/uU0_b0GnXtH2E6rAoXSd0rMg2l0Rt9MdbLaOHnu1djc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvaW1t/YWN1bGF0ZS1tZXJj/ZWRlcy1iZW56LXYt/Y2xhc3MtaW4tbmln/aHQtdmlzdGEtMTBr/aXR0bmt4dmhxN3Fw/ay5qcGc">
+					<h4>Mercedes-Benz V-Class</h4>
+				</div>
+
+			</div>
+		</div>
+		<div class="category-group">
+			<h3 data-en="Sedan Collection" data-ar="فئة السيدان">Sedan</h3>
+			<div class="fleet-grid">
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/en6v3U-W0ChKGVVUcb5gAYjpWQx075gkw8wkCMjXDC4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sZWdp/b24taW1hZ2VzLmhh/dGxhMmVlLmNvbS9s/aXN0aW5nX2ltYWdl/LzdlY2I1MmZkLWMz/NWQtNDE2YS1hMTZk/LWJhN2MwYjQ1ZWQx/Yy9tZWRpdW0uanBn" alt="" srcset="">
+					<h4>Hyundai Elantra AD</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/ksKOdTzjSFgV8ztq_mT_2tCvWimNaOgvia-Z8Wd3_4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sZWdp/b24taW1hZ2VzLmhh/dGxhMmVlLmNvbS9s/aXN0aW5nX2ltYWdl/LzRlN2ExYWI2LTRl/MTYtNGExNi04NzJl/LTA5Nzc2OTc0ZmUx/Yy9tZWRpdW0uanBn" alt="" srcset="">
+					<h4>Hyundai Elantra MD </h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/mls9-7Ro0h_BshT2KCsL5fl55wuuTbLnoL3WmfGf2Fs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sZWdp/b24taW1hZ2VzLmhh/dGxhMmVlLmNvbS9s/aXN0aW5nX2ltYWdl/Lzc4MjcwNTJjLWNk/NDktNGZmYy05Mzgx/LTBiMGI2OTc3ODcz/NC9tZWRpdW0uanBn" alt="" srcset="">
+					<h4>Elantra CN7 </h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/ovMWKYHJ_UoAjuMGF-bAohekliJhPtZ4QLoLTcSkLxs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF0/Zm9ybS5jc3RhdGlj/LWltYWdlcy5jb20v/aW4vdjIvc3RvY2tf/cGhvdG9zLzI2Njk5/OTEzLTQ2N2ItNGEz/ZC05NzUwLWM3M2Nj/NzQwYTNhOS9mYmU2/ZGU5MS03NmI5LTQ4/ZDItYWQ4Yy1iMTk2/ZDRjNTFiMjMucG5n" alt="" srcset="">
+					<h4>Toyota Corolla</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/8JbyZEnS_alx9VXeFnG1V6txCAiEvTLs7BaQKI2S8YA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdj/ZG4uc2F5YXJhdGJh/eS5jb20vbWVkaXVt/L2dhbGxlcnkvZXh0/ZXJpb3IvMTkvMTkw/OC9raWEtazMtNDIx/NzcuanBn" alt="" srcset="">
+					<h4>KIA K3</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/tkONCmAXkqhYZ9cHE_2sxiyzTUDqGCt4lDpzkpaz7To/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWFkNHdoZWVscy5j/b20vaW1nL2ZyZWUt/Y2FyLWltYWdlcy9k/ZXNrdG9wLzIxMDAw/L2tpYS1rNC0yMDI1/LTc4NTU0MS5qcGc" alt="" srcset="">
+					<h4>Kia K4</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/sUieDeZgp7_Ne0Qqj9zYr_eksN8avMZeGDdt2v4sJTE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGlt/Zy5jYXJkZWtoby5j/b20vaW1hZ2VzL2Nh/cmV4dGVyaW9yaW1h/Z2VzLzYzMHg0MjAv/TUcvNS1FVi85NTI5/LzE2ODY2NTcwMzE0/NTUvZnJvbnQtbGVm/dC1zaWRlLTQ3Lmpw/Zz90cj13LTY2NA" alt="" srcset="">
+					<h4>MG 5 </h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/jfF_yWczkDKRPPnsB87lU_Ol9K_PeO-ookUMWradBxI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzRlL01HNl9TRV9C/VENDX1NwZWNpYWxf/RWRpdGlvbi5qcGc" alt="" srcset="">
+					<h4>MG 6</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/2bSFmMLrkl9kGzkMJ6dedRqEANMgSCfcj06XdBPfV6s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvZ2tidmxr/enJjNWtlMS5qcGc" alt="" srcset="">
+					<h4>MG 7</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/WNv97ZaXig5cu-6eCrgyjYRlY3EesTgcbSn8G1Zv43M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdj/ZG4uc2F5YXJhdGJh/eS5jb20vbWVkaXVt/L2dhbGxlcnkvZXh0/ZXJpb3IvNjcvMjIz/Ny9tZy1ocy1mdWxs/LWZyb250LXZpZXct/ODg3MjIxLmpwZw" alt="" srcset="">
+					<h4>MG HS</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/lG4-3KV5AawQirgB3p9j8X-RMg2lvACrQtnJmFuJzS4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2V4cHJl/c3MuY28udWsvYXV0/b2V4cHJlc3MvMjAy/My8wNS9NRyUyMFpT/JTIwRVYlMjAwMDdf/czM2eXhpLmpwZz93/PTMyMSZoPTE4OCZm/aXQ9Y3JvcCZxPTc1/JmF1dG89Zm9ybWF0/LGNvbXByZXNzJmRw/cj0x" alt="" srcset="">
+					<h4>MG ZS </h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/sjrvQ4zUFmnDQ0rnD6suVALvScToAZj2pExTP9IvgQk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWh2/N2VlOTV6ZnQxaS5j/bG91ZGZyb250Lm5l/dC9jdXN0b20vY2Fy/LW1vZGVsLXBob3Rv/L3N0YW5kYXJkL2pl/dG91ci10MS1saWdo/dG5pbmctaS1kbS02/OGY5ODU3NjNlNjRi/LmpwZw" alt="" srcset="">
+					<h4>Jetour t1</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/s-9xvrpTalrBk-a0-c3gEvHQrTyYdV8tiKewqMsLcgs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9qZXRv/dXJici5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMTIv/amV0b3VyLXQyLWV4/dGVyaW9yLTIxLTEw/MjR4NjgzLndlYnA" alt="" srcset="">
+					<h4>Jetour t2</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/QmnuoJQC9Yd8FVdWwQXoNXR318RNDw2_-NsB5tWh-RY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/czMuYXV0b2Nhcmlu/ZGlhLmNvbS9LaWEv/Q2FyZW5zL19CRTAw/NTE0LkpQRz93PTcy/OCZxPTc1JmZtPWF1/dG8" alt="" srcset="">
+					<h4>Kia Carens </h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/JrvwT2DoLYQTExA46d0U1VQnKz_kOlmzhtSQprDBOWo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL210Zy1wcm9k/LzY1YTA5YjQ5MTQx/OTU4MDAwODZmZTE1/Yi8yMDIzLWtpYS1z/cG9ydGFnZS14LXBy/by1hd2QtcHJlc3Rp/Z2UtMjkuanBnP3c9/NzY4JndpZHRoPTc2/OCZxPTc1JmZvcm1h/dD13ZWJw" alt="" srcset="">
+					<h4>Kia Sportage</h4>
+				</div>
+				<div class="carcard">
+					<img src="https://imgs.search.brave.com/PHCaxv9GMEU6bhjF07jZmFpvrV-taPxqbx70B4vt61A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE1/MzI4NTY2Ny9waG90/by9hLWdyYXktaHl1/bmRhaS10dWNzb24t/c3V2LXRyYXZlbGlu/Zy1uZWFyLWFuLW9m/ZmljZS1idWlsZGlu/Zy13aXRoaW4tdGhl/LWRvd250b3duLWZp/bmFuY2lhbC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9dGla/cnA4dXYyd0NIQVlK/MjdyQTV2X28zQmdh/MWNHUTRQeFg5N1g2/NHhtND0" alt="" srcset="">
+					<h4>Hyundai Tucson</h4>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="booking-section" id="booking">
+		<div class="booking-card-container">
+			<label for="cartype" data-en="Choose your car type" data-ar="اختر فئة السيارة">choose your car type</label>
+			<select name="cartype" id="cartype">
+				<option value="sedan" data-en="Sedan" data-ar="سيدان">sedan</option>
+				<option value="suv" data-en="SUV" data-ar="إس يو في">suv</option>
+				<option value="vip" data-en="Luxury / VIP" data-ar="فاخرة / في آي بي">luxury</option>
+			</select>
+
+			<label for="pickupplace" data-en="Pick-up Location" data-ar="مكان الاستلام">pick up</label>
+			<select name="pickupplace" id="pickupplace">
+				<option value="cairo-airport" data-en="Cairo Airport" data-ar="مطار القاهرة">Cairo Airport</option>
+				<option value="sphinx-airport" data-en="Sphinx Airport" data-ar="مطار سفنكس">Sphinx Airport</option>
+				<option value="newcairo" data-en="New Cairo" data-ar="التجمع الخامس / القاهرة الجديدة">Newcairo</option>
+				<option value="giza" data-en="Giza" data-ar="الجيزة">Giza</option>
+				<option value="other" data-en="Other" data-ar="أخرى">Other</option>
+			</select>
+
+			<label for="service-type" data-en="Service Type" data-ar="نوع الخدمة">Service type</label>
+			<select id="service-type" name="service_type" required>
+				<option value="airport" data-en="Airport Transfer" data-ar="توصيل مطار">Airport Transfer</option>
+				<option value="point-to-point" data-en="Point to Point" data-ar="من نقطة لأخرى">Point to Point</option>
+				<option value="full-day" data-en="Full Day - 8/12 Hours" data-ar="يوم كامل - 8/12 ساعة">Full Day - 8/12 Hours</option>
+				<option value="intercity" data-en="Intercity" data-ar="بين المحافظات">Intercity</option>
+			</select>
+
+			<button type="submit" onclick="sendToWhatsApp(event)" class="whatsapp-btn">
+				<i class="fa fa-whatsapp"></i> <span data-en="Whatsapp" data-ar="واتساب">Whatsapp</span>
+			</button>
+		</div>
+	</section>
+
+	<script src="scirpt.js"></script>
+</body>
+</html>
